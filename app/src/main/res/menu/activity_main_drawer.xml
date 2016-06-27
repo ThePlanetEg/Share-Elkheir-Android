@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_contributions"
+            android:icon="@drawable/ic_contributions"
+            android:title="@string/contributions" />
+        <item
+            android:id="@+id/nav_accessibility"
+            android:icon="@drawable/ic_pan_tool_white_24dp"
+            android:title="@string/accessibility" />
+
+        <item
+            android:id="@+id/action_language"
+            android:icon="@drawable/ic_language_white_24dp"
+            android:title="@string/action_language" />
+    </group>
+
+
+</menu>

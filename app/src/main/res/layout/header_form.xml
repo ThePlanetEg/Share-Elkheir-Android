@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:CustomTextView="http://schemas.android.com/apk/res-auto"
+    android:background="@color/purple"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/back_imageView"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_arrow_back_white_24dp" />
+
+
+    <eg.com.theplanet.akram.ui.views.CustomTextView
+        CustomTextView:fontName="VodafoneRg.ttf"
+        android:id="@+id/header_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:drawablePadding="8dp"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

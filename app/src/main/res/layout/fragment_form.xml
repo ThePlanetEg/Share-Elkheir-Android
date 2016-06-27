@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:CustomTextView="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/header_layout"
+        layout="@layout/header_form" />
+
+
+
+    <LinearLayout
+        android:id="@+id/submit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/purple"
+        android:gravity="center">
+
+        <eg.com.theplanet.akram.ui.views.CustomTextView
+            CustomTextView:fontName="VodafoneRg.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_done_white_24dp"
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/ic_done_white_24dp"
+            android:gravity="center"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+
+    <include
+        layout="@layout/content_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/submit_layout"
+        android:layout_below="@id/header_layout" />
+
+</RelativeLayout>

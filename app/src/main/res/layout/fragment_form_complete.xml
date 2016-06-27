@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:CustomTextView="http://schemas.android.com/apk/res-auto"
+    android:background="#e60000">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitStart"
+        android:src="@drawable/hands" />
+
+    <eg.com.theplanet.akram.ui.views.CustomTextView
+        CustomTextView:fontName="VodafoneRg.ttf"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:text="@string/done"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="32sp" />
+
+    <eg.com.theplanet.akram.ui.views.CustomTextView
+        android:id="@+id/great_job_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        CustomTextView:fontName="VodafoneRg.ttf"
+        android:text="@string/great_job"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <eg.com.theplanet.akram.ui.views.CustomTextView
+        android:id="@+id/share_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/great_job_textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        CustomTextView:fontName="VodafoneRg.ttf"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/share_among_friends"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+    <ImageView
+        android:id="@+id/facebook_imageView"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/share_textView"
+        android:layout_margin="16dp"
+        android:src="@drawable/btn_facebook" />
+
+    <ImageView
+        android:id="@+id/twitter_imageView"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/share_textView"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/btn_twitter" />
+
+    <ImageView
+        android:id="@+id/mail_imageView"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/share_textView"
+        android:layout_margin="16dp"
+        android:src="@drawable/btn_mail" />
+
+</RelativeLayout>

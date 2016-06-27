@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:CustomTextView="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/user_imageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="16dp" />
+
+    <ImageView
+        android:id="@+id/type_imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp" />
+
+    <TextView
+        android:id="@+id/username_textView"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/user_imageView"
+        android:layout_toLeftOf="@id/type_imageView"
+        android:layout_toRightOf="@id/user_imageView"
+        android:layout_toStartOf="@id/type_imageView" />
+
+    <TextView
+        android:id="@+id/time_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username_textView"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:layout_toEndOf="@id/user_imageView"
+        android:layout_toLeftOf="@id/type_imageView"
+        android:layout_toRightOf="@id/user_imageView"
+        android:layout_toStartOf="@id/type_imageView" />
+
+    <TextView
+        android:id="@+id/location_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time_textView"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:textColor="@color/orange"
+        android:layout_toEndOf="@id/user_imageView"
+        android:layout_toLeftOf="@id/type_imageView"
+        android:layout_toRightOf="@id/user_imageView"
+        android:layout_toStartOf="@id/type_imageView" />
+
+
+    <View
+        android:id="@+id/separator_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/location_textView"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:background="#aaad" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/separator_view"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <eg.com.theplanet.akram.ui.views.CustomTextView
+            CustomTextView:fontName="VodafoneRg.ttf"
+            android:layout_width="wrap_content"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:text="@string/quantity" />
+
+        <eg.com.theplanet.akram.ui.views.CustomTextView
+            CustomTextView:fontName="VodafoneRg.ttf"
+            android:id="@+id/quantity_textView"
+            android:text="1000"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+
+        <eg.com.theplanet.akram.ui.views.CustomTextView
+            CustomTextView:fontName="VodafoneRg.ttf"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/accessibility" />
+
+        <ProgressBar
+            android:id="@+id/accessibility_progressBar"
+            style="@style/ProgressBarHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:progress="100" />
+
+        <eg.com.theplanet.akram.ui.views.CustomTextView
+            CustomTextView:fontName="VodafoneRg.ttf"
+            android:id="@+id/status_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:text="@string/this_area_needs_help"
+            android:textColor="@color/red" />
+
+    </LinearLayout>
+
+</RelativeLayout>

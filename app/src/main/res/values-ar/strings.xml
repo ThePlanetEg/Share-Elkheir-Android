@@ -1,0 +1,59 @@
+<resources>
+    <string name="internet_is_not_connected">لا يوجد اتصال بالإنترنت</string>
+    <string name="name">الاسم</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="password">كلمة المرور</string>
+    <string name="action_settings">إعدادات</string>
+    <string name="contributions">التبرعات</string>
+    <string name="sign_up">اشترك</string>
+    <string name="something_went_wrong">لقد حدث خطأ يرجى المحاوله لاحقا</string>
+    <string name="capture_picture">التقط صورة </string>
+    <string name="choose_from_gallery">اختار من الصور</string>
+    <string name="explain_storage_permission"><![CDATA[لالتقاط صور يجب السماح لشير الخير بالوصول الي الكاميرا لديك. انقر علي الاعدادات  > الاذونات و قم بتشغيل الكاميرا]]></string>
+    وا
+    <string name="invalid_email_or_password">المعلومات عير صحيحه</string>
+    <string name="invalid_name">اسم غير متاح</string>
+    <string name="invalid_email">بريد الاكتروني غير صحيح</string>
+    <string name="invalid_password">كلمة المرور يجب أن تكون 6 خانات على الأقل</string>
+    <string name="submit">سجل</string>
+    <string name="area_needs_help">المنطقة تحتاج المزيد من المساعدة</string>
+    <string name="area_is_covered">المنطقة لا تحتاج المزيد من المساعدة</string>
+    <string name="cancel">الغاء</string>
+    <string name="easy">سهل </string>
+    <string name="normal">عادي</string>
+    <string name="difficult">صعب</string>
+    <string name="last_contribution">اخر تبرع</string>
+    <string name="today_at">اليوم في</string>
+    <string name="yesterday">امس</string>
+    <string name="days_ago">أيام مضت</string>
+    <string name="quantity">الكمية</string>
+    <string name="accessibility">امكانيه الوصول</string>
+    <string name="this_area_needs_help">المنطقة تحتاج المزيد من المساعدة</string>
+    <string name="this_area_is_covered">المنطقة لا تحتاج المزيد من المساعدة</string>
+    <string name="pick_location">اختار الموقع</string>
+    <string name="login">سجل الدخول</string>
+    <string name="login_with_facebook">سجل الدخول بالفيسبوك</string>
+    <string name="still_needs_help"> تحتاج المزيد من المساعدة</string>
+    <string name="share">شارك</string>
+    <string name="food_boxes">شنط رمضان</string>
+    <string name="hot_meals">وجبات ساخنة</string>
+    <string name="allow_location_permission"><![CDATA[انقر علي الاعدادات  > الاذونات و قم بتشغيل تحديد الموقع]]></string>
+    <string name="gps_network_not_enabled">يرجي اتاحت خدمات الموقع</string>
+    <string name="feedback">شركنا رآيك</string>
+    <string name="action_language">تغير اللغة</string>
+    <string name="app_name">شير الخير</string>
+    <string name="share_among_friends">شارك مع اصدقائك</string>
+    <string name="done">تم!</string>
+    <string name="email_exists">البريد الإلكتروني مسجل مسبقآ</string>
+    <string name="boxes_of_food">شنط رمضان</string>
+    <string name="_hot_meals">وجبات ساخنة</string>
+    <string name="just_contributed">لقد تبرعت ب</string>
+    <string name="via_akram">بواسطة شير الخير</string>
+    <string name="join_me">شاركني</string>
+    <string name="great_job">شكراً على المشاركة و مساعدة الآخرين على معرفة الأماكن التي تلقت المساعدة والأماكن التي لا تزال في حاجة إلى المساعدة</string>
+    <string name="clothes">ملابس</string>
+    <string name="action_search">بحث</string>
+    <string name="search_hint">بحث</string>
+
+
+</resources>
