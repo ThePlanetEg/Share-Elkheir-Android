@@ -54,6 +54,7 @@
     <string name="clothes">ملابس</string>
     <string name="action_search">بحث</string>
     <string name="search_hint">بحث</string>
+    <string name="invalid_number">رقم غير صحيح</string>
 
 
 </resources>

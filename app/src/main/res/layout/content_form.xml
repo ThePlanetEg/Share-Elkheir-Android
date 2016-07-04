@@ -20,20 +20,26 @@
             CustomTextView:fontName="VodafoneRg.ttf" />
 
 
-        <eg.com.theplanet.akram.ui.views.CustomEditText
-            CustomTextView:fontName="VodafoneRg.ttf"
-            android:id="@+id/quantity_editText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/quantity_textInputLayout"
             android:layout_below="@id/quantity_textView"
-            android:inputType="number" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <eg.com.theplanet.akram.ui.views.CustomEditText
+                android:id="@+id/quantity_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                CustomTextView:fontName="VodafoneRg.ttf" />
+        </android.support.design.widget.TextInputLayout>
 
 
         <eg.com.theplanet.akram.ui.views.CustomTextView
             android:id="@+id/safety_title_textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/quantity_editText"
+            android:layout_below="@id/quantity_textInputLayout"
             android:layout_marginTop="32dp"
             android:text="@string/accessibility"
             android:textSize="22sp"
@@ -41,28 +47,27 @@
 
 
         <eg.com.theplanet.akram.ui.views.CustomTextView
-            CustomTextView:fontName="VodafoneRg.ttf"
             android:id="@+id/safe_textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/safety_title_textView"
             android:layout_marginTop="32dp"
             android:text="@string/easy"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            CustomTextView:fontName="VodafoneRg.ttf" />
 
 
         <eg.com.theplanet.akram.ui.views.CustomTextView
-            CustomTextView:fontName="VodafoneRg.ttf"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/safety_title_textView"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="32dp"
             android:text="@string/normal"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            CustomTextView:fontName="VodafoneRg.ttf" />
 
         <eg.com.theplanet.akram.ui.views.CustomTextView
-            CustomTextView:fontName="VodafoneRg.ttf"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
@@ -71,7 +76,8 @@
             android:layout_marginTop="32dp"
             android:text="@string/difficult"
             android:textColor="@color/red"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            CustomTextView:fontName="VodafoneRg.ttf" />
 
 
         <SeekBar
@@ -101,7 +107,6 @@
 
 
             <eg.com.theplanet.akram.ui.views.CustomTextView
-                CustomTextView:fontName="VodafoneRg.ttf"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignBaseline="@id/area_condition_switch"
@@ -111,10 +116,10 @@
                 android:layout_toStartOf="@id/area_condition_switch"
                 android:gravity="start|center"
                 android:text="@string/still_needs_help"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                CustomTextView:fontName="VodafoneRg.ttf" />
 
             <eg.com.theplanet.akram.ui.views.CustomTextView
-                CustomTextView:fontName="VodafoneRg.ttf"
                 android:id="@+id/area_condition_textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -126,26 +131,27 @@
                 android:gravity="end|center"
                 android:text="@string/area_needs_help"
                 android:textColor="@color/colorAccent"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                CustomTextView:fontName="VodafoneRg.ttf" />
         </RelativeLayout>
 
         <eg.com.theplanet.akram.ui.views.CustomTextView
-            CustomTextView:fontName="VodafoneRg.ttf"
             android:id="@+id/feedback_textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/need_help_layout"
             android:layout_marginTop="32dp"
             android:text="@string/feedback"
-            android:textSize="22sp" />
+            android:textSize="22sp"
+            CustomTextView:fontName="VodafoneRg.ttf" />
 
         <eg.com.theplanet.akram.ui.views.CustomEditText
-            CustomTextView:fontName="VodafoneRg.ttf"
             android:id="@+id/feedback_editText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/feedback_textView"
-            android:inputType="text" />
+            android:inputType="text"
+            CustomTextView:fontName="VodafoneRg.ttf" />
 
     </RelativeLayout>
 </ScrollView>

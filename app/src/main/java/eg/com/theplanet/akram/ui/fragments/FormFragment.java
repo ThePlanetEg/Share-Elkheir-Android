@@ -4,6 +4,7 @@ import android.location.Address;
 import android.location.Geocoder;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.TextInputLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.SwitchCompat;
@@ -53,6 +54,7 @@ public class FormFragment extends Fragment {
     private View submitView;
     private View rootView;
     private CustomEditText feedbackEditText;
+    private TextInputLayout quantityInputLayout;
 
 
     private String formType;
@@ -69,6 +71,7 @@ public class FormFragment extends Fragment {
         areaConditionTextView = (TextView) rootView.findViewById(R.id.area_condition_textView);
         submitView = rootView.findViewById(R.id.submit_layout);
         feedbackEditText = (CustomEditText) rootView.findViewById(R.id.feedback_editText);
+        quantityInputLayout = (TextInputLayout) rootView.findViewById(R.id.quantity_textInputLayout);
         initialize();
 
         return rootView;
@@ -88,7 +91,7 @@ public class FormFragment extends Fragment {
             headerTextView.setText(R.string.clothes);
 
 
-        }else {
+        } else {
             headerView.setBackgroundResource(R.color.blue);
             submitView.setBackgroundResource(R.color.blue);
             headerTextView.setText(R.string.hot_meals);
@@ -126,6 +129,8 @@ public class FormFragment extends Fragment {
 
     private void submit() {
 
+        if (!validate())
+            return;
         User user = UsersManager.getDefaultUser(getContext());
 
         String token = UsersManager.getToken(getContext());
@@ -172,7 +177,7 @@ public class FormFragment extends Fragment {
         Call<AddContributionResponse> call = apiManager
                 .addContribution(request.token, request.userID, request.type, request.quantity,
                         request.access, request.isCovered, request.latitude, request.longitude,
-                        request.area,request.feedback);
+                        request.area, request.feedback);
 
         call.enqueue(new Callback<AddContributionResponse>() {
             @Override
@@ -192,6 +197,17 @@ public class FormFragment extends Fragment {
                 .replace(R.id.container_view, fragment)
                 .commit();
 
+    }
+
+    private boolean validate() {
+        if (quantityEditText.getText().toString().contentEquals("") || Integer.valueOf(quantityEditText.getText().toString()) < 1) {
+            quantityInputLayout.setError(getContext().getString(R.string.invalid_number));
+            return false;
+        } else
+            quantityInputLayout.setError("");
+
+
+        return true;
     }
 
     private String getArea(LatLng location) {
